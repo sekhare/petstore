@@ -1,5 +1,6 @@
 package com.pet.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,12 +11,14 @@ import com.pet.model.Pet;
 @RequestMapping("/pet")
 public class PetController {
 
+	
 
     @RequestMapping(value="/addpet",method=RequestMethod.POST)
 	public Pet create()
 	{
 		return null;
 	}
+    
     
     @RequestMapping(value="/updatePet",method=RequestMethod.PATCH)
 	public Pet update()
@@ -35,6 +38,7 @@ public class PetController {
 	{
 		return null;
 	}
+    
     @RequestMapping(value="/getAllPets",method=RequestMethod.GET)
 	public Pet readAll()
 	{

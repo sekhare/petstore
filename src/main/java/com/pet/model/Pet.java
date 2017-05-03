@@ -1,10 +1,11 @@
 package com.pet.model;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.stereotype.Component;
 import org.springframework.test.annotation.Commit;
 
 
-
+@EntityScan
 public class Pet {
 	
 	
