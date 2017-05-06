@@ -1,3 +1,6 @@
-com\pet\app\App.class
 com\pet\controller\PetController.class
+com\config\pet\db\DatabaseConfig.class
+com\pet\dao\PetDao.class
 com\pet\model\Pet.class
+com\pet\app\App.class
+com\pet\repository\PetRepository.class

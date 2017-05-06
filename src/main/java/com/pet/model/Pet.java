@@ -1,39 +1,38 @@
 package com.pet.model;
 
-import org.springframework.boot.autoconfigure.domain.EntityScan;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+
+
+
+
+import javax.persistence.Id;
+
 import org.springframework.stereotype.Component;
-import org.springframework.test.annotation.Commit;
-
-
-@EntityScan
+@Component
+@Entity(name="pet")
 public class Pet {
 	
-	
+	@Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
 	private int id;
 	
 	private String petName;
-	private int petAge;
-	private double price;
-	
+	private String status;
 	public String getPetName() {
 		return petName;
 	}
 	public void setPetName(String petName) {
 		this.petName = petName;
 	}
-	public int getPetAge() {
-		return petAge;
+	public String getStatus() {
+		return status;
 	}
-	public void setPetAge(int petAge) {
-		this.petAge = petAge;
+	public void setStatus(String status) {
+		this.status = status;
 	}
-	public double getPrice() {
-		return price;
-	}
-	public void setPrice(double price) {
-		this.price = price;
-	}
-	 
+	
 	
 	
 
