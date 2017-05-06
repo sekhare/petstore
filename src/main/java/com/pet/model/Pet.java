@@ -13,7 +13,6 @@ import org.springframework.stereotype.Component;
 @Component
 @Entity(name="pet")
 public class Pet {
-	
 	@Id
     @GeneratedValue(strategy=GenerationType.AUTO)
 	private int id;

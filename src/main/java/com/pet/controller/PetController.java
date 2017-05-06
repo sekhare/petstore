@@ -17,7 +17,6 @@ public class PetController {
 	
 	@Autowired
 	Pet pet;
-	
 	@Autowired
 	PetRepository petRepo;
 
